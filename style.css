@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+:root {
+  --primary: hsl(4, 100%, 67%);
+  --dark-slade-grey: hsl(234, 29%, 20%);
+  --charcoal-grey: hsl(235, 18%, 26%);
+  --grey: hsl(231, 7%, 60%);
+  --white: hsl(0, 0%, 100%);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: content-box;
+  font-family: 'Roboto', sans-serif;
+}
+p {
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--charcoal-grey);
+}
+ul {
+  list-style: none;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: space-between;
+  background-color: var(--white);
+}
+.hero-img {
+  width: 100%;
+}
+.heading {
+  font-size: 38px;
+  font-weight: 700;
+  color: var(--dark-slade-grey);
+}
+.content {
+  margin: 2rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.list {
+  margin: 0.2rem 0;
+}
+.list li {
+  display: flex;
+}
+.list li * {
+  margin: 0.6rem;
+  margin-left: 0;
+}
+.emailForm {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.emailForm small {
+  font-weight: 700;
+  font-size: 12px;
+}
+.emailForm > div {
+  display: flex;
+  justify-content: space-between;
+}
+.emailForm > div > small {
+  display: none;
+}
+.errorForm > div > small {
+  display: inline;
+  color: var(--primary);
+}
+.errorForm > #email {
+  background-color: hsla(4, 100%, 67%, 0.348);
+  color: var(--primary);
+  border: 0.08rem solid var(--primary);
+}
+.errorForm > #email::placeholder {
+  color: var(--primary);
+}
+
+#email {
+  padding: 1.2rem 0.8rem;
+  border-radius: 0.5rem;
+  border: none;
+  outline: none;
+  border: 0.08rem solid var(--grey);
+  margin-bottom: 0.5rem;
+}
+.button {
+  border-radius: 0.5rem;
+  background-color: var(--dark-slade-grey);
+  font-weight: 700;
+  color: var(--white);
+  padding: 1.2rem 0.8rem;
+}
+.button:hover {
+  background-color: var(--primary);
+  border-color: var(--primary);
+  transition-duration: 0.5s;
+}
+.iconSuccess {
+  width: 3.5rem;
+}
+.disBtn {
+  margin: 0 1.5rem 2rem 1.5rem;
+}
+.contentSuccess {
+  margin-top: 8rem;
+}
+@media only screen and (min-width: 768px) {
+  body {
+    background-color: var(--charcoal-grey);
+  }
+  body > div:first-child {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .container {
+    flex-direction: row-reverse;
+    height: auto;
+    width: auto;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5rem;
+    border-radius: 1.5rem;
+  }
+  .container > picture > img {
+    height: 33.5rem;
+    margin-left: 1rem;
+  }
+  .content {
+    width: 23rem;
+  }
+  .heading {
+    font-size: 53px;
+  }
+  .contentSuccess {
+    margin-top: 1.7rem;
+    margin: 2.3rem 1rem;
+  }
+  .iconSuccess {
+    margin-bottom: 1rem;
+  }
+  .containerSuccess {
+    flex-direction: column;
+  }
+  .contentSuccess > * {
+    margin: 0rem 0.1rem 0.4rem 0.1;
+  }
+  .container > .disBtn {
+    width: 90%;
+  }
+}
