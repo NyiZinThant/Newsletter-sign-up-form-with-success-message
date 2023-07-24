@@ -79,7 +79,6 @@ ul {
 .errorForm > #email::placeholder {
   color: var(--primary);
 }
-
 #email {
   padding: 1.2rem 0.8rem;
   border-radius: 0.5rem;
@@ -108,6 +107,14 @@ ul {
 }
 .contentSuccess {
   margin-top: 8rem;
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  display: block;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
 }
 @media only screen and (min-width: 768px) {
   body {
@@ -153,5 +160,8 @@ ul {
   }
   .container > .disBtn {
     width: 90%;
+  }
+  .attribution {
+    background-color: var(--charcoal-grey);
   }
 }
